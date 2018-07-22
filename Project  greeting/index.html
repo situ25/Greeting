@@ -10,7 +10,29 @@
 
     <body>
        
-        <canvas id="canvas1" height="300px" width="300px"   onclick="init(event);" onmouseover="mouseOver(event);"  onmousemove="mouseMove(event)" onmouseout="mouseOut()"  >IF not rendered</canvas>
+        <canvas id="canvas1" height="400px" width="700px"   onclick="init(event);" onmouseover="mouseOver(event);"  onmousemove="mouseMove(event)" onmouseout="mouseOut()"  >IF not rendered</canvas>
+        <br><br>
+        
+        Select  color: <input id="colorInput" type="color" name="Choose Color" value="#800080" onchange="changeColor(this.value)" ><br><br>
+        
+        <form>
+            Change Display Text:<br>
+            <input id="messageInput" type="text" value="Hi there,How are you" name="Display Message">
+            <input type="button" onclick="changeTextInput()" value="submit">
+            <br><br>
+        </form>
+        <form>
+            To:<br>
+            <input id="to" type="text" value="" name="reciever">
+            <input type="button" onclick="fillTo()" value="submit">
+            <br><br>
+        </form>
+        <form>
+            From:<br>
+            <input id="from" type="text" value="" name="sender">
+            <input type="button" onclick="fillFrom()" value="submit">
+            <br><br>
+        </form>       
         <div>
            <h1 id="write">NOthing initialized</h1>
        </div>
